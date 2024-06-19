@@ -1,0 +1,225 @@
+:root {
+    --cc-fonts-copy: (helvetica, arial, sans-serif);
+    --cc-fonts-title: (helvetica, arial, sans-serif);
+    --cc-colors-main: #b99537;
+    --cc-colors-secondary: #b99537;
+    --cc-colors-copy: #222;
+    --cc-global-vars-borderRadius: 2px;
+    --banner-consent-background: #fff;
+    --banner-consent-boxShadow: rgba(0,0,0,.08);
+    --banner-consent-color: #222;
+    --banner-consent-borderRadius: 2px;
+    --banner-consent-width: 95%;
+    --popup-consent-color: #222;
+    --popup-consent-background: #fff;
+    --popup-consent-overlayBackground: rgba(0,0,0,0.52);
+    --popup-consent-borderRadius: 2px;
+    --popup-consent-padding: 2rem;
+    --popup-consent-tableBorderRadius: 2px;
+    --popup-consent-tableBackground: #eaeaea;
+    --popup-consent-tableHeadBackground: #b99537;
+    --popup-consent-tableHeadColor: #fff;
+    --popup-consent-tableBodyBorder: rgba(48, 12, 79, 0.031);
+    --popup-consent-tableBodyFontSize: 12px;
+    --popup-consent-toggleAgreed: #00de72;
+    --popup-consent-toggleBackground: #b1b4bd;
+    --popup-consent-toggleColor: #777;
+    --popup-consent-toggleDisabled: rgba(119,119,119,.5);
+    --popup-consent-toggleBorderRadius: 0px;
+    --popup-consent-toggleBorderRadiusAfter: 0px;
+
+    --popup-consent-linkShowMoreColor: #b99537;
+    --popup-consent-linkShowMoreColorHover: #b1b4bd;
+
+    --popup-consent-buttonDarkBackground: #b99537;
+    --popup-consent-buttonDarkColor: #fff;
+    --popup-consent-buttonDarkBackgroundHover: lighten(#b99537, 5%);
+    --popup-consent-buttonDarkColorHover: #fff;
+    --popup-consent-buttonDarkBackgroundActive: lighten(#b99537, 5%);
+    --popup-consent-buttonDarkColorActive: #fff;
+    
+    --popup-consent-buttonRefuseBackground: #fff;
+    --popup-consent-buttonRefuseColor: #212121;
+    --popup-consent-buttonRefuseBackgroundHover: #212121;
+    --popup-consent-buttonRefuseColorHover: #fff;
+    --popup-consent-buttonRefuseBackgroundActive: #212121;
+    --popup-consent-buttonRefuseColorActive: #fff;
+    
+    --popup-consent-buttonShowBackground: #fafafa;
+    --popup-consent-buttonShowColor: #212121;
+    --popup-consent-buttonShowBackgroundHover: #212121;
+    --popup-consent-buttonShowColorHover: #fff;
+    --popup-consent-buttonShowBackgroundActive: #212121;
+    --popup-consent-buttonShowColorActive: #fff;
+
+    --popup-consent-buttonBackground: #b99537;
+    --popup-consent-buttonColor: #fff;
+    --popup-consent-buttonFontFamily:(helvetica, arial, sans-serif);
+    --popup-consent-buttonFontWeight:700;
+    --popup-consent-buttonLineHeight:40px;
+    --popup-consent-buttonFontSize:12px;
+    --popup-consent-buttonLetterSpacing: 1px;
+    --popup-consent-buttonTextTransform: uppercase;
+    --popup-consent-buttonBorderRadius: 2px;
+    --popup-consent-buttonPadding: 0 1.3rem;
+    --popup-consent-buttonSimpleFontFamily: (helvetica, arial, sans-serif);
+    --popup-consent-buttonSimpleFontWeight: 700;
+    --popup-consent-buttonSimpleLineHeight: 30px;
+    --popup-consent-buttonSimpleFontSize: 10px;
+    --popup-consent-buttonSimpleTextTransform: uppercase;
+    --popup-consent-buttonSimpleLetterSpacing: 1px;
+    --popup-consent-buttonSimpleColor: #222;
+    --popup-consent-buttonSimpleBackground: transparent;
+    --popup-consent-buttonSimpleBackgroundHover: #000;
+    --popup-consent-buttonSimpleColorHover: #222;
+    --popup-consent-buttonSimpleBackgroundActive: darken(#b99537, 5%);
+    --popup-consent-buttonSimpleColorActive: #222;
+    --popup-consent-buttonSimplePadding: 0 1.3rem;
+
+    --popup-consent-buttonSmallLineHeight: 25px;
+    --popup-consent-buttonSmallFontSize: 10px;
+    --popup-consent-buttonSmallPadding: 0 8px;
+
+    --popup-consent-buttonLightColor: #b99537;
+    --popup-consent-buttonLightBackground: #fff;
+    --popup-consent-buttonLightBackgroundHover: #edf1f7;
+    --popup-consent-buttonLightColorHover: #b99537;
+    --popup-consent-buttonLightBackgroundActive: #dee2eb;
+    --popup-consent-buttonLightColorActive: #b99537;
+    
+    --popup-consent-titleColor: #b99537;
+    --popup-consent-titleFontFamily: (helvetica, arial, sans-serif);
+    --popup-consent-titleFontWeight: 600;
+    --popup-consent-titleLineHeight: 1.2;
+    --popup-consent-titleTextTransform: uppercase;
+    --popup-consent-titleLetterSpacing: 0.03rem;
+    --popup-consent-titleMargin: 0 0 1rem;
+    --popup-consent-titleFontSize: 32px;
+    --popup-consent-descrFontFamily: (helvetica, arial, sans-serif);
+    --popup-consent-descrFontWeight: 400;
+    --popup-consent-descrLineHeight: 1.7;
+    --popup-consent-descrFontSize: 14px;
+    --popup-consent-descrColor: #222;
+    --popup-consent-width: 800px;
+}
+
+/*// @if not variable-exists($ccFonts) {
+    $ccFonts: (
+        title: (helvetica, arial, sans-serif),
+        copy: (helvetica, arial, sans-serif)
+    )!default;
+// }
+
+// @if not variable-exists($ccColors) {
+    $ccColors: (
+        main: #b99537,
+        secondary: #b99537,
+        copy: #222
+    )!default;
+// }
+
+// @if not variable-exists($ccGlobalvars) {
+    $ccGlobalvars: (
+        borderRadius: 2px
+    )!default;
+// }
+
+// @if not variable-exists($bannerConsent) {
+    $bannerConsent: (
+        background: #fff,
+        boxShadow: rgba(0,0,0,.08),
+        color: map-get($ccColors, copy),
+        borderRadius: map-get($ccGlobalvars, borderRadius),
+        width: 26rem
+    )!default;
+// }
+
+// @if not variable-exists($popupConsent) {
+    $popupConsent: (
+        // Text color
+        color: map-get($ccColors, copy),
+        // Global wrapper style
+        background: #fff,
+        overlayBackground: rgba(0,0,0,0.52),
+        borderRadius: map-get($ccGlobalvars, borderRadius),
+        padding: 2rem,
+        //
+        tableBorderRadius: map-get($ccGlobalvars, borderRadius),
+        tableBackground: #eaeaea,
+            tableHeadBackground: map-get($ccColors, secondary),
+            tableHeadColor: #fff,
+            tableBodyBorder: #300c4f08,
+            tableBodyFontSize: 12px,
+
+        toggleAgreed: #00de72,
+        toggleBackground: #b1b4bd,
+        toggleColor: #777,
+        toggleDisabled: rgba(119,119,119,.5),
+        toggleBorderRadius: 0px,
+        toggleBorderRadiusAfter: 0px,
+
+        linkShowMoreColor: map-get($ccColors, main),
+        linkShowMoreColorHover: #b1b4bd,
+
+        buttonDarkBackground: map-get($ccColors, secondary),
+        buttonDarkColor: #fff,
+            buttonDarkBackgroundHover: lighten(map-get($ccColors, secondary), 5%),
+            buttonDarkColorHover: #fff,
+            buttonDarkBackgroundActive: lighten(map-get($ccColors, secondary), 5%),
+            buttonDarkColorActive: #fff,
+
+        buttonBackground: map-get($ccColors, main),
+        buttonColor: #fff,
+        buttonFontFamily:map-get($ccFonts, copy),
+        buttonFontWeight:700,
+        buttonLineHeight:40px,
+        buttonFontSize:12px,
+        buttonLetterSpacing: 1px,
+        buttonTextTransform: uppercase,
+        buttonBorderRadius: map-get($ccGlobalvars, borderRadius),
+        buttonPadding: 0 1.3rem,
+
+        buttonSimpleFontFamily: map-get($ccFonts, copy),
+        buttonSimpleFontWeight: 700,
+        buttonSimpleLineHeight: 30px,
+        buttonSimpleFontSize: 10px,
+        buttonSimpleTextTransform: uppercase,
+        buttonSimpleLetterSpacing: 1px,
+        buttonSimpleColor: map-get($ccColors, copy),
+        buttonSimpleBackground: transparent,
+        buttonSimpleBackgroundHover: #00ff83,
+        buttonSimpleColorHover: map-get($ccColors, copy),
+        buttonSimpleBackgroundActive: #00bd61,
+        buttonSimpleColorActive: map-get($ccColors, copy),
+        buttonSimplePadding: 0 1.3rem,
+
+        buttonSmallLineHeight: 25px,
+        buttonSmallFontSize: 10px,
+        buttonSmallPadding: 0 8px,
+
+        buttonLightColor: map-get($ccColors, secondary),
+        buttonLightBackground: #fff,
+            buttonLightBackgroundHover: #edf1f7,
+            buttonLightColorHover: map-get($ccColors, secondary),
+            buttonLightBackgroundActive: #dee2eb,
+            buttonLightColorActive: map-get($ccColors, secondary),
+
+        titleColor: map-get($ccColors, main),
+        titleFontFamily: map-get($ccFonts, title),
+        titleFontWeight: 600,
+        titleLineHeight: 1.2,
+        titleTextTransform: uppercase,
+        titleLetterSpacing: 0.03rem,
+        titleMargin: 0 0 1rem,
+        titleFontSize: 32px,
+        
+        descrFontFamily: map-get($ccFonts, copy),
+        descrFontWeight: 400,
+        descrLineHeight: 1.7,
+        descrFontSize: 14px,
+        descrColor: map-get($ccColors, copy),
+
+        width: 800px
+    )!default;
+// }
+*/

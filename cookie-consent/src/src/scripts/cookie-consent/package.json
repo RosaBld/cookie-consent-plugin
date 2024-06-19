@@ -1,0 +1,51 @@
+{
+  "_args": [
+    [
+      "git+https://code.alpaga.agency/alpaga/cookie-consent.git",
+      "/Users/ffaltin/www/wellnesscore-eu/wp-content/themes/lumber/app/web"
+    ]
+  ],
+  "_from": "git+https://code.alpaga.agency/alpaga/cookie-consent.git",
+  "_id": "@alpaga/cookie-consent@git+https://code.alpaga.agency/alpaga/cookie-consent.git#775033ec613b794360bd8808d006b3b59395643f",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@alpaga/cookie-consent",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://code.alpaga.agency/alpaga/cookie-consent.git",
+    "rawSpec": "git+https://code.alpaga.agency/alpaga/cookie-consent.git",
+    "saveSpec": "git+https://code.alpaga.agency/alpaga/cookie-consent.git",
+    "fetchSpec": "https://code.alpaga.agency/alpaga/cookie-consent.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://code.alpaga.agency/alpaga/cookie-consent.git#775033ec613b794360bd8808d006b3b59395643f",
+  "_spec": "git+https://code.alpaga.agency/alpaga/cookie-consent.git",
+  "_where": "/Users/ffaltin/www/wellnesscore-eu/wp-content/themes/lumber/app/web",
+  "bugs": {
+    "url": "https://github.com/alpaga/cookie-consent/issues"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.1",
+    "tslib": "^2.3.1"
+  },
+  "description": "Start a new fresh cookie consent banner",
+  "homepage": "https://github.com/alpaga/cookie-consent#readme",
+  "keywords": [
+    "cookieconsent",
+    "typescript",
+    "package",
+    "alpaga"
+  ],
+  "license": "MIT",
+  "main": "CookieConsent.ts",
+  "name": "@alpaga/cookie-consent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpaga/cookie-consent.git"
+  },
+  "version": "0.1.13"
+}

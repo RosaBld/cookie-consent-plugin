@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es5",
+        "lib": [
+            "es2017",
+            "dom",
+            "dom.iterable",
+            "es5",
+            "es2015.promise"
+        ],
+        "downlevelIteration": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        // "suppressImplicitAnyIndexErrors": true,
+        "strictNullChecks": false,
+        "noImplicitReturns": false,
+        "noImplicitThis": true,
+        "importHelpers": true,
+        "types": [
+            "webpack-env"
+        ]
+    },
+    "exclude": [
+        "./node_modules",
+        "./private",
+        "./public",
+    ]
+}
